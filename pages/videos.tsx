@@ -1,7 +1,7 @@
-import { NextPage } from 'next'
+import React from 'react'
 import Results from '../components/Results'
 
-const Home: NextPage = ({ data }: any) => {
+export default function videos () {
   return (
     <div>
       {/* @ts-ignore */}
@@ -9,5 +9,3 @@ const Home: NextPage = ({ data }: any) => {
     </div>
   )
 }
-
-export default Home

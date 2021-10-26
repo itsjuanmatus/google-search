@@ -17,7 +17,7 @@ export default function Results ({ data }: any) {
         getResults(`${router.pathname}/q=${searchTerm}&num=40`)
       }
     }
-  }, [searchTerm, router.pathname, getResults])
+  }, [searchTerm, router.pathname])
 
   if (isLoading) return <Loading />
 

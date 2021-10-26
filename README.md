@@ -1,6 +1,8 @@
 ## Google Search
 
-This app uses the [Google Search API.](https://rapidapi.com/apigeek/api/google-search3)
+This app uses the [Google Search API.](https://rapidapi.com/apigeek/api/google-search3) 
+NOTE: KEEP IN MIND THAT THE REQUESTS ARE LIMITED IN THE FREE VERSION, if you cannot see any results
+feel free to clone the project and use your api credentials.
 
 You can find it deployed [here](https://google-search-poc.netlify.app).
 

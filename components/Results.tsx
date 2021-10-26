@@ -17,16 +17,16 @@ export default function Results ({ data }: any) {
         getResults(`${router.pathname}/q=${searchTerm}&num=40`)
       }
     }
-  }, [searchTerm, router.pathname])
+  }, [searchTerm, router.pathname, getResults])
 
   if (isLoading) return <Loading />
 
   switch (router.pathname) {
     case '/search':
       return (
-        <div className='flex flex-wrap justify-between space-y-6 sm:px-56'>
+        <div className='grid md:grid-cols-2 gap-x-10 w-full m-auto place-items-center'>
           {results?.map(({ link, title }: any, index: any) => (
-            <div key={index} className='md:w-2/5 w-full'>
+            <div key={index} className='md:w-2/5 w-full p-3'>
               <a href={link} target='_blank' rel='noreferrer'>
                 <p className='text-sm'>
                   {link.length > 30 ? link.substring(0, 30) : link}
@@ -41,7 +41,7 @@ export default function Results ({ data }: any) {
       )
     case '/images':
       return (
-        <div className='flex flex-wrap justify-center items-center'>
+        <div className='grid md:grid-cols-2 gap-x-10 w-full m-auto place-items-center'>
           {results?.map(({ image, link: { href, title } }: any, index: any) => (
             <a
               className='sm:p-3 p-5'
@@ -59,7 +59,7 @@ export default function Results ({ data }: any) {
 
     case '/news':
       return (
-        <div className='flex flex-wrap justify-between space-y-6 sm:px-56 items-center'>
+        <div className='grid md:grid-cols-2 gap-10 w-full m-auto place-items-center mt-2'>
           {results?.map(({ links, id, source, title }: any) => (
             <div key={id} className='md:w-2/5 w-full'>
               <a

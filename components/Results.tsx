@@ -56,7 +56,6 @@ export default function Results ({ data }: any) {
           ))}
         </div>
       )
-
     case '/news':
       return (
         <div className='grid md:grid-cols-2 gap-10 w-full m-auto place-items-center mt-2'>

@@ -2,6 +2,8 @@
 
 This app uses the [Google Search API.](https://rapidapi.com/apigeek/api/google-search3)
 
+You can find it deployed [here](https://google-search-poc.netlify.app).
+
 This app was built with:
  - ReactJS
  - NextJS
